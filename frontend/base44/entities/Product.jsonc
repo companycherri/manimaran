@@ -1,0 +1,145 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the sweet or hamper"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the product"
+    },
+    "price": {
+      "type": "number",
+      "description": "Base price (deprecated, use weight-based pricing)"
+    },
+    "price_250g": {
+      "type": "number",
+      "description": "Price for 250g"
+    },
+    "price_500g": {
+      "type": "number",
+      "description": "Price for 500g"
+    },
+    "price_1kg": {
+      "type": "number",
+      "description": "Price for 1kg"
+    },
+    "price_200ml": {
+      "type": "number",
+      "description": "Price for 200ml (for liquid products like ghee)"
+    },
+    "price_500ml": {
+      "type": "number",
+      "description": "Price for 500ml (for liquid products like ghee)"
+    },
+    "price_1000ml": {
+      "type": "number",
+      "description": "Price for 1000ml (for liquid products like ghee)"
+    },
+    "default_display_volume": {
+      "type": "string",
+      "enum": [
+        "200ml",
+        "500ml",
+        "1000ml"
+      ],
+      "default": "200ml",
+      "description": "Default volume to display on product card for ml-based products"
+    },
+    "price_per_kg": {
+      "type": "number",
+      "description": "Base price per kilogram for dynamic weight calculation"
+    },
+    "max_weight_kg": {
+      "type": "number",
+      "default": 10,
+      "description": "Maximum weight allowed per order in kilograms"
+    },
+    "unit": {
+      "type": "string",
+      "enum": [
+        "kg",
+        "piece",
+        "box",
+        "ml"
+      ],
+      "default": "kg",
+      "description": "Unit of measurement"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "ghee_sweets",
+        "milk_sweets",
+        "cashew_sweets",
+        "dry_fruit_sweets",
+        "savouries",
+        "hampers",
+        "mysurpa",
+        "ghee"
+      ],
+      "description": "Main category of the product"
+    },
+    "show_category_badge": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show or hide category badge on product detail page"
+    },
+    "display_order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order for sorting products (lower numbers appear first)"
+    },
+    "signature_display_order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order for Our Signature Sweets section (lower numbers appear first)"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "High-quality product image URL"
+    },
+    "promo_video_url": {
+      "type": "string",
+      "description": "Short promo video URL to play on hover in the Signature Sweets section"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true,
+      "description": "Availability status"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Featured on homepage or as a best-seller"
+    },
+    "featured_in_footer": {
+      "type": "boolean",
+      "default": false,
+      "description": "Display in footer showcase section"
+    },
+    "ingredients": {
+      "type": "string",
+      "description": "List of key ingredients"
+    },
+    "keywords": {
+      "type": "string",
+      "description": "SEO keywords, comma-separated"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active",
+      "description": "Product status - only active products are shown to customers on the frontend"
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}

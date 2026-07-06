@@ -1,0 +1,33 @@
+{
+  "name": "Settings",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Setting key"
+    },
+    "value": {
+      "type": "string",
+      "description": "Setting value"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "delivery",
+        "payment",
+        "general",
+        "seo"
+      ],
+      "description": "Setting category"
+    },
+    "description": {
+      "type": "string",
+      "description": "Setting description"
+    }
+  },
+  "required": [
+    "key",
+    "value",
+    "category"
+  ]
+}

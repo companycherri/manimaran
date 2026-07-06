@@ -1,0 +1,40 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "customer_name": {
+      "type": "string",
+      "description": "Name of the customer"
+    },
+    "customer_image": {
+      "type": "string",
+      "description": "Customer profile image URL"
+    },
+    "review_text": {
+      "type": "string",
+      "description": "Review content"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "default": 5,
+      "description": "Rating out of 5"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether review is active"
+    }
+  },
+  "required": [
+    "customer_name",
+    "review_text",
+    "rating"
+  ]
+}

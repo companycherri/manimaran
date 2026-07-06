@@ -1,0 +1,77 @@
+{
+  "name": "Page",
+  "type": "object",
+  "properties": {
+    "page_key": {
+      "type": "string",
+      "description": "Unique identifier for the page (e.g., 'about', 'contact', 'products')"
+    },
+    "title": {
+      "type": "string",
+      "description": "Page title"
+    },
+    "banner_image": {
+      "type": "string",
+      "format": "binary",
+      "description": "Banner image for the page"
+    },
+    "content": {
+      "type": "string",
+      "description": "Page content in HTML/text format"
+    },
+    "content_heading": {
+      "type": "string",
+      "description": "Heading for the main content section"
+    },
+    "legacy_image": {
+      "type": "string",
+      "description": "Image URL for the Legacy section on the About page"
+    },
+    "legacy_heading": {
+      "type": "string",
+      "description": "Heading for the Legacy section (e.g. 'A Legacy Crafted with Love')"
+    },
+    "legacy_paragraph1": {
+      "type": "string",
+      "description": "First paragraph of the Legacy section"
+    },
+    "legacy_paragraph2": {
+      "type": "string",
+      "description": "Second paragraph of the Legacy section"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "icon": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Page sections with title, content, and optional images"
+    },
+    "meta_description": {
+      "type": "string",
+      "description": "SEO meta description"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether page is active"
+    }
+  },
+  "required": [
+    "page_key",
+    "title"
+  ]
+}

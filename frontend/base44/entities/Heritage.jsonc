@@ -1,0 +1,43 @@
+{
+  "name": "Heritage",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Heritage section title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Heritage section description"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Heritage section image URL (legacy)"
+    },
+    "banner_image": {
+      "type": "string",
+      "description": "Banner/thumbnail image shown before video plays"
+    },
+    "video_url": {
+      "type": "string",
+      "description": "Heritage section video URL"
+    },
+    "button_text": {
+      "type": "string",
+      "description": "Button text"
+    },
+    "button_link": {
+      "type": "string",
+      "description": "Button link URL"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether section is active"
+    }
+  },
+  "required": [
+    "title",
+    "description"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Blog",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Blog post title"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Short excerpt"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full blog content"
+    },
+    "featured_image": {
+      "type": "string",
+      "description": "Featured image URL"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name"
+    },
+    "published": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether blog is published"
+    },
+    "publish_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Publish date"
+    },
+    "tags": {
+      "type": "string",
+      "description": "Comma-separated tags"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}

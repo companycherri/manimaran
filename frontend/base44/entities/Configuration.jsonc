@@ -1,0 +1,58 @@
+{
+  "name": "Configuration",
+  "type": "object",
+  "properties": {
+    "resend_api_key": {
+      "type": "string",
+      "description": "Resend API Key"
+    },
+    "resend_sender_email": {
+      "type": "string",
+      "description": "Sender email address"
+    },
+    "resend_sender_name": {
+      "type": "string",
+      "description": "Sender name"
+    },
+    "resend_enabled": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable/disable email service"
+    },
+    "payment_gateway": {
+      "type": "string",
+      "enum": [
+        "razorpay",
+        "stripe",
+        "paypal",
+        "none"
+      ],
+      "default": "razorpay",
+      "description": "Selected payment gateway"
+    },
+    "payment_api_key": {
+      "type": "string",
+      "description": "Payment gateway API key or client ID"
+    },
+    "payment_secret_key": {
+      "type": "string",
+      "description": "Payment gateway secret key"
+    },
+    "payment_webhook_secret": {
+      "type": "string",
+      "description": "Webhook secret for payment gateway"
+    },
+    "payment_enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable/disable payment gateway"
+    },
+    "admin_email": {
+      "type": "string",
+      "format": "email",
+      "default": "contentcherri@gmail.com",
+      "description": "Admin email for receiving notifications"
+    }
+  },
+  "required": []
+}

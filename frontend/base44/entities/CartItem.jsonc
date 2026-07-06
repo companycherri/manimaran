@@ -1,0 +1,40 @@
+{
+  "name": "CartItem",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "Reference to product"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "product_image": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number",
+      "default": 1
+    },
+    "unit_price": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string",
+      "enum": [
+        "250g",
+        "500g",
+        "1kg"
+      ],
+      "description": "Selected weight variant"
+    }
+  },
+  "required": [
+    "product_id",
+    "quantity",
+    "unit_price"
+  ]
+}

@@ -1,0 +1,2 @@
+"code","description","discount_type","discount_value","min_order_value","max_discount","valid_from","valid_until","usage_limit","used_count","active","id","created_date","updated_date","created_by_id","created_by","is_sample"
+"FIRST100","First order discount - Flat ₹100 off","fixed","100","300","","2024-01-01","2024-12-31","","0","true","68e6358df531c1faba765044","2025-10-08T09:57:33.473000","2025-10-08T09:57:33.473000","68e6146089ccb876f02ada7a","contentcherri@gmail.com","false"

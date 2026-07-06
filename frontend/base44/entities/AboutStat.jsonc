@@ -1,0 +1,28 @@
+{
+  "name": "AboutStat",
+  "type": "object",
+  "properties": {
+    "number": {
+      "type": "string",
+      "description": "The stat number/value (e.g., '975', '24+')"
+    },
+    "label": {
+      "type": "string",
+      "description": "Label below the number (e.g., 'liters of honey sold')"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order (lower numbers appear first)"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether stat is visible"
+    }
+  },
+  "required": [
+    "number",
+    "label"
+  ]
+}

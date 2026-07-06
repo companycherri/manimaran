@@ -1,0 +1,32 @@
+{
+  "name": "Navigation",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Navigation item name"
+    },
+    "path": {
+      "type": "string",
+      "description": "Navigation path/URL"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether item is active"
+    },
+    "parent_id": {
+      "type": "string",
+      "description": "Parent navigation item ID for dropdowns"
+    }
+  },
+  "required": [
+    "name",
+    "path"
+  ]
+}

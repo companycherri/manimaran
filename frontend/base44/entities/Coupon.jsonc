@@ -1,0 +1,64 @@
+{
+  "name": "Coupon",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Coupon code"
+    },
+    "description": {
+      "type": "string",
+      "description": "Coupon description"
+    },
+    "discount_type": {
+      "type": "string",
+      "enum": [
+        "percentage",
+        "fixed"
+      ],
+      "description": "Type of discount"
+    },
+    "discount_value": {
+      "type": "number",
+      "description": "Discount amount or percentage"
+    },
+    "min_order_value": {
+      "type": "number",
+      "default": 0,
+      "description": "Minimum order value to apply coupon"
+    },
+    "max_discount": {
+      "type": "number",
+      "description": "Maximum discount amount (for percentage type)"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date",
+      "description": "Coupon valid from date"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date",
+      "description": "Coupon expiry date"
+    },
+    "usage_limit": {
+      "type": "number",
+      "description": "Maximum number of times coupon can be used"
+    },
+    "used_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times coupon has been used"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether coupon is active"
+    }
+  },
+  "required": [
+    "code",
+    "discount_type",
+    "discount_value"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Announcement",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "description": "Announcement text to display"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether announcement is active"
+    },
+    "background_color": {
+      "type": "string",
+      "default": "#C41E3A",
+      "description": "Background color of announcement bar"
+    },
+    "text_color": {
+      "type": "string",
+      "default": "#FFFFFF",
+      "description": "Text color"
+    },
+    "scroll_speed": {
+      "type": "number",
+      "default": 50,
+      "description": "Scrolling speed (lower is faster)"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "text"
+  ]
+}

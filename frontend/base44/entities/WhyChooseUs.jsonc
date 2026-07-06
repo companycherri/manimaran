@@ -1,0 +1,43 @@
+{
+  "name": "WhyChooseUs",
+  "type": "object",
+  "properties": {
+    "heading": {
+      "type": "string",
+      "description": "Section heading"
+    },
+    "description": {
+      "type": "string",
+      "description": "Section description paragraph"
+    },
+    "box1_title": {
+      "type": "string",
+      "description": "First feature box title"
+    },
+    "box1_text": {
+      "type": "string",
+      "description": "First feature box description"
+    },
+    "box2_title": {
+      "type": "string",
+      "description": "Second feature box title"
+    },
+    "box2_text": {
+      "type": "string",
+      "description": "Second feature box description"
+    },
+    "box3_title": {
+      "type": "string",
+      "description": "Third feature box title"
+    },
+    "box3_text": {
+      "type": "string",
+      "description": "Third feature box description"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": []
+}

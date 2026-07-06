@@ -1,0 +1,57 @@
+{
+  "name": "Banner",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Banner title"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Banner subtitle"
+    },
+    "description": {
+      "type": "string",
+      "description": "Banner description"
+    },
+    "media_type": {
+      "type": "string",
+      "enum": [
+        "image",
+        "video"
+      ],
+      "default": "image",
+      "description": "Type of media - image or video"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Banner image URL"
+    },
+    "video_url": {
+      "type": "string",
+      "description": "Banner video URL"
+    },
+    "link_url": {
+      "type": "string",
+      "description": "URL to navigate when clicked"
+    },
+    "button_text": {
+      "type": "string",
+      "description": "Call to action button text"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether banner is active"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "title",
+    "media_type"
+  ]
+}

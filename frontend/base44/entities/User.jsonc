@@ -1,0 +1,28 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "phone": {
+      "type": "string",
+      "description": "User phone number"
+    },
+    "address": {
+      "type": "string",
+      "description": "User delivery address"
+    },
+    "city": {
+      "type": "string",
+      "description": "City"
+    },
+    "pincode": {
+      "type": "string",
+      "description": "PIN code"
+    }
+  },
+  "required": [
+    "phone",
+    "address",
+    "city",
+    "pincode"
+  ]
+}

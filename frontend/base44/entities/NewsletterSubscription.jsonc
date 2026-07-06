@@ -1,0 +1,24 @@
+{
+  "name": "NewsletterSubscription",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Subscriber email address"
+    },
+    "subscribed_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Subscription date"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether subscription is active"
+    }
+  },
+  "required": [
+    "email"
+  ]
+}

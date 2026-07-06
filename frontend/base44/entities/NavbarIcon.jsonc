@@ -1,0 +1,48 @@
+{
+  "name": "NavbarIcon",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Icon name (e.g., WhatsApp, Instagram)"
+    },
+    "icon_type": {
+      "type": "string",
+      "enum": [
+        "whatsapp",
+        "instagram",
+        "facebook",
+        "youtube",
+        "twitter",
+        "linkedin",
+        "spotify",
+        "pinterest"
+      ],
+      "description": "Type of social media icon"
+    },
+    "url": {
+      "type": "string",
+      "description": "Link URL for the icon"
+    },
+    "color": {
+      "type": "string",
+      "default": "#000000",
+      "description": "Icon background color (hex code)"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order (lower numbers appear first)"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether icon is active"
+    }
+  },
+  "required": [
+    "name",
+    "icon_type",
+    "url"
+  ]
+}

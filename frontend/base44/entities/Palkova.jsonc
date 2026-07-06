@@ -1,0 +1,39 @@
+{
+  "name": "Palkova",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Palkova section title"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Palkova section subtitle"
+    },
+    "description": {
+      "type": "string",
+      "description": "Palkova section description"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Palkova image URL"
+    },
+    "button_text": {
+      "type": "string",
+      "description": "Button text"
+    },
+    "button_link": {
+      "type": "string",
+      "description": "Button link URL"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether section is active"
+    }
+  },
+  "required": [
+    "title",
+    "description"
+  ]
+}

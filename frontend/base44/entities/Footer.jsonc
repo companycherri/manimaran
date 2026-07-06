@@ -1,0 +1,54 @@
+{
+  "name": "Footer",
+  "type": "object",
+  "properties": {
+    "about_title": {
+      "type": "string",
+      "description": "About section title"
+    },
+    "about_text": {
+      "type": "string",
+      "description": "About section description"
+    },
+    "quick_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Quick links in footer"
+    },
+    "contact_address": {
+      "type": "string",
+      "description": "Contact address"
+    },
+    "contact_phone": {
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "Contact email"
+    },
+    "newsletter_title": {
+      "type": "string",
+      "description": "Newsletter section title"
+    },
+    "newsletter_text": {
+      "type": "string",
+      "description": "Newsletter description"
+    },
+    "copyright_text": {
+      "type": "string",
+      "description": "Copyright text at bottom"
+    }
+  },
+  "required": []
+}
